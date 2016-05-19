@@ -8,6 +8,9 @@ Bolts로 컨트롤 하는 것을 보여주는 예제 소스 입니다.<br/>
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking)
 - [Bolts-ObjC](https://github.com/BoltsFramework/Bolts-ObjC)
 
+#### ScreenShot
+![](SimulatorScreenShot.png)
+
 ---
 
 
