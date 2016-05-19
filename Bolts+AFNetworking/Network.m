@@ -45,7 +45,7 @@
     return self;
 }
 
-+ (BFTask*)requestGET:(NSString*)url
++ (nonnull BFTask*)requestGET:(nonnull NSString*)url
 {
     //결과를 확인하기 위한 Bolts 용 인스턴스 생성
     BFTaskCompletionSource* taskSource = [BFTaskCompletionSource taskCompletionSource];
@@ -73,7 +73,7 @@
     return taskSource.task;
 }
 
-+ (BFTask*)requestPOST:(NSString*)url withParameter:(NSDictionary*)params
++ (nonnull BFTask*)requestPOST:(nonnull NSString*)url withParameter:(nullable NSDictionary*)params
 {
     //결과를 확인하기 위한 Bolts 용 인스턴스 생성
     BFTaskCompletionSource* taskSource = [BFTaskCompletionSource taskCompletionSource];
@@ -104,7 +104,7 @@
     return taskSource.task;
 }
 
-+ (BOOL)isWebImageCached:(NSString*)url
++ (BOOL)isWebImageCached:(nonnull NSString*)url
 {
     Network* network = [Network sharedNetwork];
     id imageData = [network.imageCache objectForKey:url];
@@ -114,7 +114,7 @@
     return NO;
 }
 
-+ (BFTask*)requestWebImage:(NSString*)url
++ (nonnull BFTask*)requestWebImage:(nonnull NSString*)url
 {
     //결과를 확인하기 위한 Bolts 용 인스턴스 생성
     BFTaskCompletionSource* taskSource = [BFTaskCompletionSource taskCompletionSource];

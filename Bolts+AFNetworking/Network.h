@@ -12,12 +12,12 @@
 
 @interface Network : NSObject
 
-+ (BFTask*)requestGET:(NSString*)url;
++ (nonnull BFTask*)requestGET:(nonnull NSString*)url;
 
-+ (BFTask*)requestPOST:(NSString*)url withParameter:(NSDictionary*)params;
++ (nonnull BFTask*)requestPOST:(nonnull NSString*)url withParameter:(nullable NSDictionary*)params;
 
-+ (BOOL)isWebImageCached:(NSString*)url;
++ (BOOL)isWebImageCached:(nonnull NSString*)url;
 
-+ (BFTask*)requestWebImage:(NSString*)url;
++ (nonnull BFTask*)requestWebImage:(nonnull NSString*)url;
 
 @end
